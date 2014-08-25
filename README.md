@@ -1,4 +1,6 @@
-data_analysis
+Python for Data Analysis
 =============
 
-Python for data analysis investigation
+I've been reading the excellent book ('Python for Data Analysis') http://my.safaribooksonline.com/9781449323592
+
+And to keep notes & explore the subject, I've created this repo.
