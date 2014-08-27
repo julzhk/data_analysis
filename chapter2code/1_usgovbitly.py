@@ -1,7 +1,16 @@
 import json
+import os
 import pprint
+import psutil
 import unittest
 from collections import Counter
+
+def memory_usage():
+    # return the memory usage in MB
+    # Why we don't use non-lazy iterables? Memory consumption!
+    process = psutil.Process(os.getpid())
+    mem = process.get_memory_info()[0] / float(2 ** 20)
+    return mem
 
 def naive_extract_rows():
     """ simple step through the data.
