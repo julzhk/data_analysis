@@ -4,7 +4,6 @@ import pprint
 import psutil
 import unittest
 from collections import Counter
-from pandas import DataFrame, Series
 def memory_usage():
     # return the memory usage in MB
     # Why we don't use non-lazy iterables? Memory consumption!
